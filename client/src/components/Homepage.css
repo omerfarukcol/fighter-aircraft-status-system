@@ -1,0 +1,102 @@
+.angle {
+    color: white;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+    width: 400px;
+    height: 400px;
+}
+
+.battery {
+    width: 300px;
+    height: 300px;
+    margin-left: 150px;
+    transition: opacity 0.5s ease-in-out;
+
+}
+
+.speed {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    display: inline-block; 
+    margin-left: 250px;
+}
+
+.button-start {
+    color: black;
+    display: block;
+    height: 30px;
+    margin-top: 300px;
+    color: white;
+    background-color: green;
+}
+
+
+.button-stop {
+    color: black;
+    display: block;
+    height: 30px;
+    margin-top: 300px;
+    color: white;
+    background-color: red;
+}
+
+
+.button-start:hover, .button-stop:hover {
+    color: yellow;
+}
+  
+.circle {
+    display: block; /* Ensure full width of the big image */
+    max-width: 100%; /* Make sure the image fits within the container */
+    width: 300px;
+    height: 300px;
+  }
+  
+h2 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    color: white;
+    padding: 8px;
+  }
+
+  h3 {
+    position: relative;
+    bottom: 20px;
+    left: 150px;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    color: white;
+    padding: 8px;
+  }
+  
+
+
+.outer {
+    background-color: black;
+    width: 900px;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+  }
+
+  .flashing img , .flashing div {
+    animation: swingOpacity 0.5s infinite alternate; /* Animation for swinging opacity */
+  }
+
+
+  
+  @keyframes swingOpacity {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
